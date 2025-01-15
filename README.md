@@ -1,4 +1,29 @@
+## RUN APP
+-		composer i
+-		cp .env.example .env
+
+set your .env file and DB connection
+
+DB_CONNECTION=mysql
+
+DB_HOST=127.0.0.1
+
+DB_PORT=3306
+
+DB_DATABASE=laravel
+
+DB_USERNAME=root
+
+DB_PASSWORD=
+
+
+-       php artisan key:generate
+-       php artisan migrate
+-       php artisan serve
+http://127.0.0.1:8000/
+
 ## Создать скрипт генерации jpg картинки и галерею для демонстрации его работы.
+
 ### - Генератор изображений - generator.php
 -	Исходники картинок хранятся в папке gallery.
 -	Get-параметры: name(название картинки без расширения) и size(код размера).
